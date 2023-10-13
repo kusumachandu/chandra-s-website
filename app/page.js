@@ -4,6 +4,8 @@ import HeroSection from '@/components/HeroSection'
 import Navbar from '@/components/Navbar'
 import AboutSection from '@/components/AboutSection'
 import ProjectSection from '@/components/ProjectSection'
+import EmailSection from '@/components/EmailSection'
+import Footer from '@/components/Footer'
 
 
 export default function Home() {
@@ -14,8 +16,22 @@ export default function Home() {
         <HeroSection />
         <AboutSection />
         <ProjectSection />
+        <EmailSection />
       </div>
+      <Footer />
     </main>
   )
 }
+
+
+// import { Resend } from 'resend';
+
+// const resend = new Resend('re_Q1FyZudA_2cWLxYN5GSVak4Rb27DHvqix');
+
+// resend.emails.send({
+//   from: 'onboarding@resend.dev',
+//   to: 'kusumachandu43@gmail.com',
+//   subject: 'Hello World',
+//   html: '<p>Congrats on sending your <strong>first email</strong>!</p>'
+// });
  
