@@ -1,10 +1,13 @@
+import Image from "next/image";
 import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="footer border border-l-transparent border-r-transparent text-white border-t-[#33353F]">
-      <div className="container p-12 flex justify-between">
-        <span>LOGO</span>
+    <footer className="footer border-t border-l-transparent border-r-transparent text-white border-t-[#33353F]">
+      <div className="container p-8 flex justify-between items-center">
+        <span className="">
+        <Image src='/images/logo' alt='logo' width={50} height={50} className='rounded-full' />
+        </span>
         <p className="text-slate-600">All rights reserved.</p>
       </div>
     </footer>

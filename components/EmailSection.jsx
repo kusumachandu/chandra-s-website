@@ -43,7 +43,7 @@ const EmailSection = () => {
   }
 
   return (
-    <section className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative">
+    <section className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative" id='contact'>
       <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900 to-transparent rounded-full absolute top-3/4 -left-4 transform -translate-x-1/2 translate-y-4 h-80 w-80 z-0 blur-lg"></div>
       <div>
         <h5 className="text-xl font-bold text-white my-2">
@@ -58,7 +58,7 @@ const EmailSection = () => {
           <Link href="https://www.github.com/kusumachandu">
             <Image src={GithubIcon} alt="Github image" />
           </Link>
-          <Link href="https://www.linedin.com/in/kusumachandu">
+          <Link href="https://www.linkedin.com/in/chandrashekar-kusuma-49b65219a/">
             <Image src={LinkedinIcon} alt="Linkedin image" />
           </Link>
         </div>

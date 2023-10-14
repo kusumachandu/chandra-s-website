@@ -25,3 +25,35 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+/* styles.css (or your CSS file) */
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* .animation-scroll {
+  animation: scroll 2s linear infinite;
+} */
+
+/* Logo.css */
+
+.logo {
+  display: flex;
+  font-family: 'Arial', sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  color: #4a90e2; /* Choose a color for your logo */
+}
+
+.letter {
+  padding: 5px; /* Adjust the spacing between letters */
+  margin: 0 5px; /* Adjust the spacing around each letter */
+}
+
+
