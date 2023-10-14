@@ -12,7 +12,7 @@ const projectsData = [
     image: "/images/projects/OLNX.png",
     tag: ["All", "Applications"],
     gitUrl: '/',
-    previewUrl: '/'
+    previewUrl: 'https://olnx-git-open-ai-radegg.vercel.app/'
   },
   {
     id: 2,
@@ -20,8 +20,8 @@ const projectsData = [
     description: "A website for an organisation",
     image: "/images/projects/ANYO.png",
     tag: ["All", "Websites"],
-    gitUrl: '/',
-    previewUrl: '/'
+    gitUrl: 'https://github.com/hammyasf/anyo-frontend',
+    previewUrl: 'https://anyo.radegg.com/'
   },
   {
     id: 3,
@@ -29,8 +29,8 @@ const projectsData = [
     description: "Website for the Zvoid Organisation",
     image: "/images/projects/ZVOID.png",
     tag: ["All", "Websites"],
-    gitUrl: '/',
-    previewUrl: '/'
+    gitUrl: 'https://github.com/kusumachandu/Zvoid_Animation',
+    previewUrl: 'https://zvoid-animation.vercel.app/'
   },
   {
     id: 4,
@@ -38,8 +38,8 @@ const projectsData = [
     description: "An E-Commerce application",
     image: "/images/projects/bodyshop.png",
     tag: ["All", "Applications"],
-    gitUrl: '/',
-    previewUrl: '/'
+    gitUrl: 'https://github.com/gurdeep7/mybodyshop',
+    previewUrl: 'https://gurdeep7.github.io/mybodyshop/html/home'
   },
   {
     id: 5,
@@ -47,7 +47,7 @@ const projectsData = [
     description: "An Health-Care web-application",
     image: "/images/projects/Practo.png",
     tag: ["All", "Applications"],
-    gitUrl: '/',
+    gitUrl: 'https://github.com/surajmasai/Clone-Practo',
     previewUrl: 'https://clone-practo.vercel.app/'
   },
   {
@@ -56,7 +56,7 @@ const projectsData = [
     description: "An Health-Care website",
     image: "/images/projects/Diagnostic.png",
     tag: ["All", "Websites"],
-    gitUrl: '/',
+    gitUrl: 'https://github.com/kusumachandu/diagnostic-healthcare',
     previewUrl: '/'
   },
 ];
