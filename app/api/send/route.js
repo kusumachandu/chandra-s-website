@@ -7,7 +7,7 @@ const fromEmail = process.env.FROM_EMAIL;
 
 export async function POST(req, res) {
 
-  const { body } = await req;
+  const body = await req.json();
   const {email, subject, message} = body;
 
   console.log(typeof(email));
@@ -15,7 +15,7 @@ export async function POST(req, res) {
   try {
     const data = await resend.emails.send({
       from: fromEmail,
-      to: ["kusumachandu43@gmail.com", `${email}`],
+      to: ["kusumachandu43@gmail.com", email],
       subject: subject,
       react: (
         <>
