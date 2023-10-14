@@ -15,6 +15,15 @@ const HeroSection = () => {
     document.body.removeChild(link);
   };
 
+  const handleScroll = () => {
+    const contactElement = document.getElementById('contact');
+
+  if (contactElement) {
+    contactElement.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  }
+
   return (
     <section>
       <div className="grid grid-cols-1 sm:grid-cols-12">
@@ -45,7 +54,7 @@ const HeroSection = () => {
             Lorem ipsum dolar sit amet consecutor adpisting elit, quis
           </p>
           <div>
-            <button className="px-6 py-3 sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 w-full  hover:bg-slate-200 text-white">
+            <button onClick={handleScroll} className="px-6 py-3 sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 w-full  hover:bg-slate-200 text-white">
               Hire Me
             </button>
             <button onClick={handleDownload} className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800 text-white mt-3">
