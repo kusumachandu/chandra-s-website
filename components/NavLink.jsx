@@ -1,10 +1,10 @@
-import Link from 'next/link'
+import {Link} from 'react-scroll'
 import React from 'react'
 
 const NavLink = ({ href, title }) => {
   return (
-    <Link href={href}
-      className='block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white'
+    <Link to={href} smooth={true} duration={1000}
+      className='block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded cursor-pointer md:p-0 hover:text-white'
     >
       {title}
     </Link>
