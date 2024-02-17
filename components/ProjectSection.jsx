@@ -74,14 +74,14 @@ const ProjectSection = () => {
   })
 
   return (
-    <div id="projects">
+    <div id="projects" className="">
       <h2 className="text-center font-bold text-4xl">My Projects</h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
         <ProjectTag onClick={handleTagChange} name="All" isSelected={tag === 'All'}  /> 
         <ProjectTag onClick={handleTagChange} name="Websites" isSelected={tag === 'Websites'}  /> 
         <ProjectTag onClick={handleTagChange} name="Applications" isSelected={tag === 'Applications'}  /> 
       </div>
-      <div className="mt-8 grid md:grid-cols-3 gap-8 md:gap-12">
+      <div className="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
         {filteredProjects.map((project) => (
           <ProjectCard
             key={project.id}

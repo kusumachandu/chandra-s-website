@@ -7,7 +7,7 @@ const ProjectTag = ({ name, onClick, isSelected }) => {
 
   return (
     <button 
-      className={` ${buttonStyles} rounded-full border-2 border-purple-500 px-6 py-2 text-xl cursor-pointer`}
+      className={` ${buttonStyles} rounded-full border-2 border-purple-500 px-3 md:px-6 py-2 text-sm md:text-md lg:text-xl cursor-pointer`}
       onClick={() => onClick(name)}
     >
       {name}

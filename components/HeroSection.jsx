@@ -50,8 +50,8 @@ const HeroSection = () => {
               repeat={Infinity}
             />
           </h1>
-          <p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl">
-            Lorem ipsum dolar sit amet consecutor adpisting elit, quis
+          <p className="text-[#ADB7BE] text-base lg:text-xl pb-2 lg:pb-0">
+            Passionate and Experienced in the field
           </p>
           <div>
             <button onClick={handleScroll} className="px-6 py-3 sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 w-full  hover:bg-slate-200 text-white">

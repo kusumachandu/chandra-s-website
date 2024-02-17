@@ -10,7 +10,7 @@ const TAB_DATA =  [
     title:"Skills",
     id: "skills",
     content: (
-      <ul className="list-disc pl-2">
+      <ul className="gap-2 grid grid-cols-3 list-none">
         <li>JavaScript</li>
         <li>HTML</li>
         <li>CSS</li>
@@ -87,15 +87,16 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="text-white" id='about'>
-      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+    <section className="text-white px-2" id='about'>
+      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-1 lg:px-4 xl:gap-16 sm:py-16 xl:px-16">
         <Image
           src="/images/about-image.png"
           width={500}
           height={500}
+          className="w-[450px]"
           alt="about-image"
         />
-        <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
+        <div className="mt-4 md:mt-0 text-left flex flex-col h-full ">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
             I am a full stack web developer with a passion for creating
@@ -105,7 +106,7 @@ const AboutSection = () => {
             expand my knowledge and skill set. I am a team player and I am
             excited to work with oithers to create amazing applications.
           </p>
-          <div className="flex flex-row justify-start mt-8">
+          <div className="flex flex-row justify-start mt-8 lg:gap-8">
             <TabButton
               active={tab === "skills"}
               selectTab={() => handleTabChange("skills")}
