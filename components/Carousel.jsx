@@ -36,14 +36,14 @@ const Carousel = ({ images }) => {
   }, []);
 
   return (
-    <div className="image-container relative w-full overflow-hidden">
+    <div className="image-container relative w-full overflow-hidden px-2">
       <motion.div 
         className="flex gap-2 animation-scroll ease-in-out infinite"
-        initial = {{ x: 1200 }}
-        animate = {{ x: -1200, transition: { duration: 10, repeat: Infinity } }}
+        initial = {{ x: '100vw' }}
+        animate = {{ x: 0, transition: { duration: 2 } }}
       >
         {images.map((image, index) => (
-          <div key={index} className="image-item rounded-xl w-full h-[200px]">
+          <div key={index} className="image-item rounded-xl w-full h-[200px] mr-2">
             <Image src={image} alt={`Image ${index}`} width={100} height={100} className="w-full rounded-xl h-[200px] object-cover" />
           </div>
         ))}

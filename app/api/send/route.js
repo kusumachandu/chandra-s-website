@@ -11,12 +11,12 @@ export async function POST(req, res) {
   const body = await req.json();
   const {email, subject, message} = body;
 
-  console.log(typeof(email));
+  console.log(fromEmail);
 
   try {
     const data = await resend.emails.send({
       from: fromEmail,
-      to: ["kusumachandu43@gmail.com", email],
+      to: "kusumachandu43@gmail.com",
       subject: subject,
       react: (
         <>
