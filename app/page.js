@@ -9,12 +9,16 @@ import Footer from "@/components/Footer";
 import Carousel from "@/components/Carousel";
 
 const images = [
-  "/images/projects/ANYO.png",
-  "/images/projects/bodyshop.png",
-  "/images/projects/Diagnostic.png",
-  "/images/projects/ZVOID.png",
-  "/images/projects/Practo.png",
-  "/images/projects/OLNX.png",
+  "/images/projects/js.png",
+  "/images/projects/html.png",
+  "/images/projects/css.jpg",
+  "/images/projects/react.png",
+  "/images/projects/mongo.png",
+  "/images/projects/nextjs.jpg",
+  "/images/projects/postman.png",
+  "/images/projects/github.jpg",
+  "/images/projects/express-js.png",
+  "/images/projects/stripe.png"
 ];
 
 export default function Home() {

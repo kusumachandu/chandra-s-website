@@ -60,7 +60,9 @@ const Navbar = () =>  {
           </ul>
         </div>
       </div>
-      {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
+      <div className='md:hidden bg-transparent flex justify-end'>
+        {navbarOpen && <MenuOverlay links={navLinks} setNavbarOpen={setNavbarOpen} />}
+      </div>
     </nav>
   )
 };

@@ -7,6 +7,15 @@ import ProjectTag from "./ProjectTag";
 const projectsData = [
   {
     id: 1,
+    title: "Kerala Sadhya",
+    description: "AN uk based e-commerce application",
+    image: "/images/projects/keralaSadhya.png",
+    tag: ["All", "Applications"],
+    gitUrl: '/',
+    previewUrl: 'https://www.keralasadhya.uk/'
+  },
+  {
+    id: 7,
     title: "OLNX",
     description: "AN AI powered web apllication",
     image: "/images/projects/OLNX.png",
@@ -31,15 +40,6 @@ const projectsData = [
     tag: ["All", "Websites"],
     gitUrl: 'https://github.com/kusumachandu/Zvoid_Animation',
     previewUrl: 'https://zvoid-animation.vercel.app/'
-  },
-  {
-    id: 4,
-    title: "Body-Shop",
-    description: "An E-Commerce application",
-    image: "/images/projects/bodyshop.png",
-    tag: ["All", "Applications"],
-    gitUrl: 'https://github.com/gurdeep7/mybodyshop',
-    previewUrl: 'https://gurdeep7.github.io/mybodyshop/html/home'
   },
   {
     id: 5,

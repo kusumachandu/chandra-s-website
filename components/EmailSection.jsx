@@ -25,9 +25,9 @@ const EmailSection = () => {
     const options = {
       method: 'POST',
 
-      headers: {
-        'Content-Type': 'application/json',
-      },
+      // headers: {
+      //   'Content-Type': 'application/json',
+      // },
 
       body: jsonData,
     }
@@ -42,7 +42,7 @@ const EmailSection = () => {
   }
 
   return (
-    <section className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative" id='contact'>
+    <section className="grid md:grid-cols-2 my-4 md:my-12 py-8 md:py-24 gap-4 relative" id='contact'>
       <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900 to-transparent rounded-full absolute top-3/4 -left-4 transform -translate-x-1/2 translate-y-4 h-80 w-80 z-0 blur-lg"></div>
       <div>
         <h5 className="text-xl font-bold text-white my-2">
@@ -62,26 +62,29 @@ const EmailSection = () => {
           </Link>
         </div>
       </div>
-      <div>
-        <form className="flex flex-col" onSubmit={handleSubmit}>
-          <div className="mb-6">
+      <div className="text-left md:text-right">
+        <form className="flex flex-col pt-8 md:pt-0" onSubmit={handleSubmit}>
+          <div className="mb-6 lg:text-right">
             <label
               htmlFor="email"
-              className="text-white block text-sm font-medium mb-2"
+              className="text-white block font-bold mb-2"
             >
               Your Email
             </label>
-            <input
+            <p className="text-right">kusumachandu43@gmail.com</p>
+            {/* <input
               name='email'
               type="email"
               id="email"
               required
               placeholder="john@gmail.com"
               className="text-gray-100 w-full bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9]  p-2.5 rounded-lg block"
-            />
+            /> */}
           </div>
-          <div className="mb-6">
-            <label
+          <div className="mb-6 lg:text-right ">
+            <p className="font-bold">Mobile</p>
+            <p>+91 87090133883</p>
+            {/* <label
               htmlFor="subject"
               className="text-white mb-2 block text-sm font-medium "
             >
@@ -94,9 +97,9 @@ const EmailSection = () => {
               required
               placeholder="hello there!"
               className="text-gray-100 w-full bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9]  p-2.5 rounded-lg block"
-            />
+            /> */}
           </div>
-          <div className="mb-6">
+          {/* <div className="mb-6">
             <label
               htmlFor="message"
               className="text-white mb-2 block text-sm font-medium "
@@ -120,7 +123,15 @@ const EmailSection = () => {
             submitted && (
               <p className="text-green-500 text-sm mt-2">Email sent successfully!</p>
             )
-          }
+          } */}
+          <div className="lg:text-right">
+            <p className="font-bold">Address:</p>
+            <div>
+              <p>masjid street, mandadam</p>
+              <p>Guntur, 522503</p>
+              <p>Andhra Pradesh</p>
+            </div>
+          </div>
         </form>
       </div>
     </section>
