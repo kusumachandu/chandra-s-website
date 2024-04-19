@@ -8,7 +8,7 @@ const HeroSection = () => {
 
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = 'https://drive.google.com/file/d/1zqMKL9k_kCNwfPHapN7tjQjOVE6oqysr/view?usp=sharing'; // Replace with the actual URL of your CV file
+    link.href = 'https://drive.google.com/file/d/1jeekMNsWDIxzFOGoxnC6WOVPAj5hL2MO/view?usp=sharing'; // Replace with the actual URL of your CV file
     link.download = 'CV.pdf'; // Specify the desired file name for download
     document.body.appendChild(link);
     link.click();
@@ -43,6 +43,8 @@ const HeroSection = () => {
                 1000,
                 "Full Stack Developer",
                 1000,
+                "Freelancer",
+                1000
               ]}
               wrapper="span"
               speed={50}
