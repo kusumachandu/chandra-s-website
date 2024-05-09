@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { useState } from "react";
 import GithubIcon from "../public/github-icon.svg";
@@ -7,7 +7,6 @@ import Link from "next/link";
 import Image from "next/image";
 
 const EmailSection = () => {
-
   const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = async (e) => {
@@ -15,34 +14,37 @@ const EmailSection = () => {
     const data = {
       email: e.target.email.value,
       subject: e.target.subject.value,
-      message: e.target.message.value
-    }
+      message: e.target.message.value,
+    };
 
     const jsonData = JSON.stringify(data);
-    console.log(jsonData)
+    console.log(jsonData);
     const endpoint = "/api/send";
 
     const options = {
-      method: 'POST',
+      method: "POST",
 
       // headers: {
       //   'Content-Type': 'application/json',
       // },
 
       body: jsonData,
-    }
+    };
 
     const response = await fetch(endpoint, options);
     // const responseData = await response.json();
     console.log(response);
-    if(response.status === 200) {
-      console.log('message sent');
+    if (response.status === 200) {
+      console.log("message sent");
       setSubmitted(true);
     }
-  }
+  };
 
   return (
-    <section className="grid md:grid-cols-2 my-4 md:my-12 py-8 md:py-24 gap-4 relative" id='contact'>
+    <section
+      className="grid md:grid-cols-2 my-4 md:my-12 py-8 md:py-24 gap-4 relative"
+      id="contact"
+    >
       <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900 to-transparent rounded-full absolute top-2/3 md:top-3/4 -left-4 transform -translate-x-1/2 md:-translate-x-1/2 lg:-translate-x-3/4 translate-y-4 md:translate-y-12 h-80 w-80 md:w-60 md:h-60 z-0 blur-lg"></div>
       <div>
         <h5 className="text-xl font-bold text-white my-2">
@@ -71,7 +73,7 @@ const EmailSection = () => {
             >
               Email
             </label>
-            <p className="text-right">kusumachandu43@gmail.com</p>
+            <p className="md:text-right">kusumachandu43@gmail.com</p>
             {/* <input
               name='email'
               type="email"
