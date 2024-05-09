@@ -67,7 +67,10 @@ const EmailSection = () => {
       <div className="text-left md:text-right">
         <form className="flex flex-col pt-8 md:pt-0" onSubmit={handleSubmit}>
           <div className="mb-6 lg:text-right">
-            <label htmlFor="email" className="text-white block font-bold mb-2">
+            <label
+              htmlFor="email"
+              className="text-white block font-bold mb-2"
+            >
               Email
             </label>
             <p className="md:text-right">kusumachandu43@gmail.com</p>
