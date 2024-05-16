@@ -5,76 +5,97 @@ import Image from "next/image";
 
 import TabButton from "./TabButton";
 
-const TAB_DATA =  [
+const TAB_DATA = [
   {
-    title:"Skills",
+    title: "Skills",
     id: "skills",
     content: (
       <ul className="gap-2 grid grid-cols-3 list-none">
-        <li>JavaScript</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>React</li>
-        <li>Next</li>
+        <li>Next.Js 14</li>
         <li>Express</li>
         <li>MongoDb</li>
         <li>Node</li>
+        <li>UI/UX design</li>
+        <li>Responsive design</li>
+        <li>Testing and Debugging</li>
+        <li>React</li>
         <li>Git</li>
         <li>PostgreSQL</li>
-        <li>Postman</li>
+        <li>Database Management</li>
+        <li>Stripe Payment Gateway</li>
+        <li>Google Cloud Storage</li>
       </ul>
-    )
+    ),
   },
   {
-    title:"Education",
+    title: "Education",
     id: "education",
     content: (
       <div className="flex flex-col gap-4">
         <ul>
-          <li className="font-semibold">Malla Reddy Engineering College  (BTech)</li>
+          <li className="font-semibold">
+            Malla Reddy Engineering College (BTech)
+          </li>
           <li>Jawaharlal Nehru Technological University, Hyderabad</li>
-          <li className="font-extralight"><span className="font-semibold">CGPA: 7.2</span> (2018 - 2021)</li>
+          <li className="font-extralight">
+            <span className="font-semibold">CGPA: 7.2</span> (2018 - 2021)
+          </li>
         </ul>
         <ul>
-          <li className="font-semibold">Anurag Engineering College (Diploma)</li>
+          <li className="font-semibold">
+            Anurag Engineering College (Diploma)
+          </li>
           <li>Jawaharlal Nehru Technological University, Hyderabad</li>
-          <li className="font-extralight"><span className="font-semibold">CGPA: 8.1</span> (2015 - 2018)</li>
+          <li className="font-extralight">
+            <span className="font-semibold">CGPA: 8.1</span> (2015 - 2018)
+          </li>
         </ul>
-
       </div>
-    )
+    ),
   },
   {
-    title:"Certifications",
+    title: "Certifications",
     id: "certifications",
     content: (
       <ul>
         <li className="font-semibold">Full Stack Mern Developer</li>
-        <li>Masai School <span className="font-extralight">(Apr 2021 - Apr 2022 )</span></li>
+        <li>
+          Masai School{" "}
+          <span className="font-extralight">(Apr 2021 - Apr 2022 )</span>
+        </li>
       </ul>
-    )
+    ),
   },
   {
-    title:"Experiences",
+    title: "Experiences",
     id: "experiences",
     content: (
       <div className="flex flex-col gap-4">
         <ul>
           <li className="font-semibold">React Developer</li>
-          <li>Metafic <span className="font-extralight">(May 2022 - Oct 2022 )</span></li>
+          <li>
+            Metafic{" "}
+            <span className="font-extralight">(May 2022 - Oct 2022 )</span>
+          </li>
         </ul>
         <ul>
           <li className="font-semibold">Full Stack Web Developer</li>
-          <li>Zvoid <span className="font-extralight">(Nov 2022 - Jul 2023 )</span></li>
+          <li>
+            Zvoid{" "}
+            <span className="font-extralight">(Nov 2022 - Jul 2023 )</span>
+          </li>
         </ul>
         <ul>
           <li className="font-semibold">Frontend Developer</li>
-          <li>Freelance <span className="font-extralight">(Jul 2023 - Present )</span></li>
+          <li>
+            Freelance{" "}
+            <span className="font-extralight">(Jul 2023 - Present )</span>
+          </li>
         </ul>
       </div>
-    )
+    ),
   },
-]
+];
 
 const AboutSection = () => {
   const [tab, setTab] = useState("skills");
@@ -87,7 +108,7 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="text-white px-2" id='about'>
+    <section className="text-white px-2" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-1 lg:px-4 xl:gap-16 sm:py-16 xl:px-16">
         <Image
           src="/images/about-image.png"
@@ -133,9 +154,7 @@ const AboutSection = () => {
             </TabButton>
           </div>
           <div className="mt-4">
-            {
-              TAB_DATA.find((t) => t.id === tab).content
-            }
+            {TAB_DATA.find((t) => t.id === tab).content}
           </div>
         </div>
       </div>
