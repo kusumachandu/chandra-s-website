@@ -10,7 +10,7 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="gap-1 grid grid-cols-2 list-disc">
+      <ul className="gap-1 grid grid-cols-1 lg:grid-cols-2 px-2 md:px-0 list-disc">
         <li>Next.Js 14</li>
         <li>Express</li>
         <li>MongoDb</li>

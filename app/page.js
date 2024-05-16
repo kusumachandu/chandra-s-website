@@ -7,6 +7,7 @@ import ProjectSection from "@/components/ProjectSection";
 import EmailSection from "@/components/EmailSection";
 import Footer from "@/components/Footer";
 import Carousel from "@/components/Carousel";
+import { NavbarProvider } from "@/context/NavbarContext";
 
 const images = [
   "/images/projects/js.png",
@@ -23,6 +24,7 @@ const images = [
 
 export default function Home() {
   return (
+    <NavbarProvider>
     <main className="flex min-h-screen flex-col bg-[#121212]">
       <Navbar />
       <div className="container mt-24 mx-auto px-2 lg:px-12 py-4">
@@ -36,6 +38,7 @@ export default function Home() {
       </div>
       <Footer />
     </main>
+    </NavbarProvider>
   );
 }
 
