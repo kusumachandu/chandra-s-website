@@ -10,7 +10,7 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="gap-2 grid grid-cols-3 list-none">
+      <ul className="gap-1 grid grid-cols-2 list-disc">
         <li>Next.Js 14</li>
         <li>Express</li>
         <li>MongoDb</li>
@@ -24,6 +24,9 @@ const TAB_DATA = [
         <li>Database Management</li>
         <li>Stripe Payment Gateway</li>
         <li>Google Cloud Storage</li>
+        <li>Authentication & Authorization</li>
+        <li>Tailwindcss/Shadcn UI</li>
+        <li>CI/CD pipelines</li>
       </ul>
     ),
   },
