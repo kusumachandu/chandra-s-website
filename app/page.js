@@ -27,9 +27,9 @@ export default function Home() {
     <NavbarProvider>
     <main className="flex min-h-screen flex-col bg-[#121212]">
       <Navbar />
-      <div className="container mt-24 mx-auto px-2 lg:px-12 py-4">
+      <div className="container mt-24 mx-auto px-2 lg:px-0 py-4">
         <HeroSection />
-        <div className="container mx-auto mt-16 mb-8">
+        <div className="container mx-auto mt-16 lg:mt-24 mb-8">
           <Carousel images={images} />
         </div>
         <AboutSection />

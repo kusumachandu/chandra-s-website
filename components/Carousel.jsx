@@ -1,56 +1,58 @@
-'use client'
-import Image from 'next/image';
-import { useState, useRef, useEffect } from 'react';
-import { motion, useAnimation } from 'framer-motion';
+"use client";
 
-const Carousel = ({ images }) => {
-  const containerRef = useRef(null);
-  const innerRef = useRef(null);
-  const controls = useAnimation();
+import Image from "next/image";
+import { motion } from "framer-motion";
 
-  useEffect(() => {
-    const innerWidth = innerRef.current.scrollWidth;
-    const containerWidth = containerRef.current.offsetWidth;
-    const distance = innerWidth - containerWidth;
-
-    // Function to animate the scroll
-    const animateScroll = async () => {
-      await controls.start({
-        x: -distance,
-        transition: {
-          type: 'tween',
-          duration: 10,
-          ease: 'linear',
-          repeat: Infinity,
-          repeatType: 'loop',
-        },
-      });
-
-      // Reset the scroll position to the starting point
-      containerRef.current.scrollLeft = 0;
-    };
-
-    animateScroll();
-
-    // Cleanup function
-    return () => {
-      controls.stop();
-    };
-  }, [controls, images]);
-
+export default function Carousel({ images }) {
   return (
-    <div className="image-container relative w-full overflow-hidden px-2">
-      <div className="flex gap-2" ref={containerRef} style={{ width: '100%', overflow: 'hidden' }}>
-        <motion.div className="flex gap-2" ref={innerRef}>
-          {images.map((image, index) => (
-            <div key={index} className="image-item rounded-xl w-full lg:h-[200px] kg:mr-2">
-              <Image src={image} alt={`Image ${index}`} width={100} height={100} className="w-[50px] h-[50px] md:w-[100px] md:h-[100px] lg:w-full rounded-xl lg:h-[200px] object-cover" />
-            </div>
-          ))}
-        </motion.div>
-      </div>
+    <div className="relative w-full overflow-hidden">
+      <motion.div
+        className="flex gap-6"
+        animate={{ x: ["0%", "-50%"] }}
+        transition={{
+          ease: "linear",
+          duration: 20,
+          repeat: Infinity,
+        }}
+      >
+        {/* Duplicate images for infinite loop */}
+        {[...images, ...images].map((image, index) => (
+          <div
+            key={index}
+            className="flex-shrink-0 w-16 h-16 md:w-28 md:h-28
+                       rounded-full border border-gray-300
+                       flex items-center justify-center
+                       bg-white/5 backdrop-blur-sm"
+          >
+            <Image
+              src={image}
+              alt={`carousel-image-${index}`}
+              width={128}
+              height={128}
+              className="rounded-full object-cover w-full h-full"
+              priority={false}
+            />
+          </div>
+        ))}
+        {[...images, ...images].map((image, index) => (
+          <div
+            key={index}
+            className="flex-shrink-0 w-24 h-24 md:w-28 md:h-28 lg:w-32 lg:h-32
+                       rounded-full border border-gray-300
+                       flex items-center justify-center
+                       bg-white/5 backdrop-blur-sm"
+          >
+            <Image
+              src={image}
+              alt={`carousel-image-${index}`}
+              width={128}
+              height={128}
+              className="rounded-full object-cover w-full h-full"
+              priority={false}
+            />
+          </div>
+        ))}
+      </motion.div>
     </div>
   );
-};
-
-export default Carousel;
+}

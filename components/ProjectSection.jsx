@@ -11,16 +11,16 @@ const projectsData = [
     description: "AN uk based e-commerce application",
     image: "/images/projects/keralaSadhya.png",
     tag: ["All", "Applications"],
-    gitUrl: "/",
+    gitUrl: "/not_found",
     previewUrl: "https://www.keralasadhya.uk/",
   },
   {
-    id: 7,
+    id: 4,
     title: "OLNX",
     description: "AN AI powered web apllication",
     image: "/images/projects/OLNX.png",
     tag: ["All", "Applications"],
-    gitUrl: "/",
+    gitUrl: "/not_found",
     previewUrl: "https://olnx-git-open-ai-radegg.vercel.app/",
   },
   {
@@ -59,6 +59,26 @@ const projectsData = [
     gitUrl: "https://github.com/kusumachandu/diagnostic-healthcare",
     previewUrl: "https://diagnostic-healthcare.vercel.app/",
   },
+  {
+    id: 7,
+    title: "Jaagruk Bharat",
+    description:
+      "Jaagruk Bharat is a pioneering digital platform committed to empowering Indian citizens by making government schemes, policies, and benefits easily accessible",
+    image: "/images/banner_tree.jpeg",
+    tag: ["All", "Websites"],
+    gitUrl: "/not_found",
+    previewUrl: "https://jaagrukbharat.com",
+  },
+  {
+    id: 8,
+    title: "Jaagruk Bharat Dashboard",
+    description:
+      "To build a robust, scalable, and user-friendly service management panel that: Collects user service requests via WhatsApp/app/website",
+    image: "/images/jb_icon.png",
+    tag: ["All", "Dashboards"],
+    gitUrl: "/not_found",
+    previewUrl: "https://portal.jaagrukbharat.com",
+  },
 ];
 
 const ProjectSection = () => {
@@ -90,6 +110,11 @@ const ProjectSection = () => {
           onClick={handleTagChange}
           name="Applications"
           isSelected={tag === "Applications"}
+        />
+        <ProjectTag
+          onClick={handleTagChange}
+          name="Dashboards"
+          isSelected={tag === "Dashboards"}
         />
       </div>
       <div className="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
