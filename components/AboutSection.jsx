@@ -89,10 +89,17 @@ const TAB_DATA = [
           </li>
         </ul>
         <ul>
-          <li className="font-semibold">Frontend Developer</li>
+          <li className="font-semibold">MERN Stack Developer</li>
           <li>
             Freelance{" "}
-            <span className="font-extralight">(Jul 2023 - Present )</span>
+            <span className="font-extralight">(Jul 2023 - Aug 2024 )</span>
+          </li>
+        </ul>
+        <ul>
+          <li className="font-semibold">SDE-2</li>
+          <li>
+            Jaagruk Bharat{" "}
+            <span className="font-extralight">(Aug 2024 - Present )</span>
           </li>
         </ul>
       </div>
@@ -120,15 +127,17 @@ const AboutSection = () => {
           className="w-[450px]"
           alt="about-image"
         />
-        <div className="mt-4 md:mt-0 text-left flex flex-col h-full ">
+        <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I am a full stack web developer with a passion for creating
-            interactive and responsive web applications. I have experience
-            working woth JavaScript, React, Redux, Node js, Express, PostgreSQL,
-            HTML, CSS and Git. I am a quick learner and I am always looking ot
-            expand my knowledge and skill set. I am a team player and I am
-            excited to work with oithers to create amazing applications.
+            Senior full-stack developer with a strong track record of building
+            modern, scalable web applications. Experienced across the full
+            development lifecycle, from system design and implementation to
+            optimization and deployment. Adept at working with JavaScript,
+            React, Redux, Node.js, Express, PostgreSQL, and modern frontend
+            technologies, with a focus on delivering maintainable,
+            business-driven solutions through effective collaboration and
+            technical leadership.
           </p>
           <div className="flex flex-row justify-start mt-8 lg:gap-8">
             <TabButton
