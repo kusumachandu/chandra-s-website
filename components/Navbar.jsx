@@ -29,17 +29,17 @@ const Navbar = () => {
   const { navbarOpen, toggleNavbar } = useNavbarContext();
 
   return (
-    <nav className="fixed top-0 left-0 right-0  z-10 bg-[#121212] bg-opacity-100">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#121212] bg-opacity-100">
       <div className="flex flex-wrap items-center justify-between mx-auto px-4 py-2">
         <Link
           href={"/"}
           className="text-2xl md:text-5xl cursor-pointer text-white font-semibold"
         >
           <Image
-            src="/images/logo"
+            src="/images/logo.png"
             alt="logo"
-            width={50}
-            height={50}
+            width={80}
+            height={80}
             className="rounded-full"
           />
         </Link>
